@@ -1,0 +1,286 @@
+@font-face {
+  font-family: apple;
+  src: url(Appletwo.ttf);
+}
+@font-face {
+  font-family: pixel;
+  src: url(pixelify.ttf);
+}
+html{
+	height: 100%;
+}
+body{
+	background-color: #000;
+	background-image: url(pic/wallpaper.jpeg);
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+h1{
+	margin: 0;
+}
+h2{
+	margin: 0;
+}
+
+
+.window{
+	background-color: #6DCBCE;
+	padding: 6px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #117D82;
+	border-right: 2px solid #117D82;
+	position: absolute;
+	box-shadow: 5px 5px rgba(0, 0, 0, .1);
+}
+.windowtop{
+	background-color: #2BA0A4;
+	color: #fff;
+	padding-top: 4px;
+	padding-bottom: 7px;
+	padding-left: 2px;
+	padding-right: 4px;
+	font-size: 12px;
+	font-family: apple;
+	display: block;
+
+}
+.winbutton{
+	box-shadow: inset -2px -2px #117D82 , inset 2px 2px #fff;
+	width: 16px;
+	height: 16px;
+	color: #000;
+	float: right;
+	font-size: 12px;
+	background-color: #6DCBCE;
+	margin-left: 2px;
+}
+
+.windowin{
+	background-color: #f0f0f0;
+	padding: 12px;
+	margin-top:6px;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-top: 2px solid #117D82;
+	border-left: 2px solid #117D82;
+}
+.windowbottom{
+	background-color: #6dcbce;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+	margin-top:3px;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-top: 2px solid #117D82;
+	border-left: 2px solid #117D82;
+	font-size: 8px;
+	font-family: apple;
+}
+
+.links{
+	top: 20vh;
+	left: 37vw;
+}
+.linksin{
+	text-align: center;
+	font-size: 20px;
+}
+.mood{
+	top:1rem;
+	left:58rem;
+}
+.moodin{
+	background-image: url(pic/mood.gif);
+	background-size: cover;
+	height: 20rem;
+}
+.hello{
+	top: 5vh;
+	left:10vw;
+}
+.aboutme{
+	top:41vh;
+	left: 8vw;
+}
+.skills{
+	top: 22rem;
+	left: 55rem;
+}
+.skillsin{
+	background-image: url(pic/sunrise.jpeg);
+	background-size: cover;
+	color: #fff;
+	height: 18rem;
+}
+
+
+
+
+/*Design window*/
+.design{
+	width: 90vw;
+	top:1rem;
+	left: 8rem;
+}
+.designin{
+	height: 80vh;
+	text-align: center;
+	overflow: auto;
+}
+.header{
+	margin-top: 2rem;
+	border-bottom: 2px dashed #000;
+	width: 50rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header h1{
+	font-family: pixel;
+	font-size: 60px;
+}
+.designin h2{
+	font-family: pixel;
+	font-size: 30px;
+}
+.wave{
+	width: 50rem;
+	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 2px dashed #000;
+}
+.picon p{
+	font-size: 10px;
+}
+.pixelcons{
+	display: inline-flex;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+h4{
+	margin: 0;
+	font-family: apple;
+	font-size: 16px;
+}
+h5{
+	margin: 0;
+	font-family: pixel;
+	font-size: 24px;
+}
+.planeplan{
+	width: 70rem;
+	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 2px dashed #000;
+}
+.anti{
+	width: 50rem;
+	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 2px dashed #000;
+}
+.shelter{
+	width: 50rem;
+	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 2px dashed #000;
+}
+/*-----*/
+
+
+
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color:#6DCBCE ;
+  box-shadow: 0 -2px #fff, 0 -4px #6DCBCE;
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.start{
+	margin-left: 12px;
+	margin-right: 2px;
+	box-shadow: inset -2px -2px #117D82 , inset 2px 2px #fff;
+	font-family: apple;
+	display: inline-flex;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	padding-left: 6px;
+}
+.start p{
+	margin: 0;
+	padding-left: 4px;
+	padding-right: 8px;
+	letter-spacing: -4px;
+	color: #0C5C60;
+}
+.menubutt{
+	box-shadow: inset -2px -2px #117D82 , inset 2px 2px #fff;
+	font-family: apple;
+	display: inline-flex;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	padding-left: 6px;
+	padding-right: 6px;
+	width: 200px;
+}
+.menubutt p{
+	margin: 0;
+	padding-left: 6px;
+	letter-spacing: -4px;
+	color: #0C5C60;
+}
+.menubuttactive{
+	box-shadow: inset 2px 2px #117D82 , inset -2px -2px #fff;
+	font-family: apple;
+	display: inline-flex;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	padding-left: 6px;
+	padding-right: 6px;
+	background-color: rgba(255, 255, 255, .3);
+	width: 200px;
+}
+.menubuttactive p{
+	margin: 0;
+	padding-left: 6px;
+	letter-spacing: -4px;
+	color: #0C5C60;
+}
+
+.icon{
+	height: 82px;
+	margin-bottom: 25px;
+}
+.icon p{
+	font-family: apple;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	letter-spacing: -2px;
+}
+.icon img{
+	margin-left: 5px;
+	height: 60px;
+	margin-bottom: 5px;
+}
+.desctop{
+	width: 70px;
+	height: 403px;
+	display: block;
+	margin-top: 20px;
+	margin-left: 20px;
+}
