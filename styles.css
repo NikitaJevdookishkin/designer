@@ -171,6 +171,13 @@ h5{
 	font-family: pixel;
 	font-size: 24px;
 }
+.djanny{
+	width: 50rem;
+	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 2px dashed #000;
+}
 .planeplan{
 	width: 70rem;
 	margin-top: 4rem;
