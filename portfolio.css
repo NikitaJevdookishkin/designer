@@ -1,0 +1,41 @@
+html{
+
+}
+body{
+    text-align: center;
+
+}
+img{
+    max-width: 90vw;
+}
+.infolder{
+    scroll-behavior: inherit;
+}
+.folder-header{
+    margin-top: 2rem;
+    border-bottom: 2px dashed #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+h4{
+    margin: 0;
+    font-family: apple;
+    font-size: 16px;
+}
+h5{
+    margin: 0;
+    font-family: pixel;
+    font-size: 24px;
+}
+.work{
+    border-bottom: 2px dashed #000;
+    padding: 20px;
+}
+/*-----*/
+
+@media (max-width: 768px) {
+    img{
+
+    }
+
+    }

@@ -1,164 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Jevdokiskin</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer and Front-end - Nikita Jevdokiskin</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="desktop">
+        <!-- Desctop icons -->
+        <div class="icon" id="home-icon">
+            <div class="icon-image"><img src="pic/home.png" alt=""></div>
+            <span>Home</span>
+        </div>
+        <div class="icon" id="design-icon">
+            <div class="icon-image"><img src="pic/folder.png" alt=""></div>
+            <span>Design</span>
+        </div>
+        <div class="icon" id="music-icon">
+            <div class="icon-image"><img src="pic/music.png" alt=""></div>
+            <span>My music</span>
+        </div>
+         <div class="icon" id="mail-icon">
+            <div class="icon-image"><img src="pic/mail.png" alt=""></div>
+            <span>Mail Me</span>
+        </div>
+        <!-- Home/Links ICON -->
+        <div class="icon" id="links-icon">
+            <div class="icon-image"><img src="pic/text.png" alt=""></div>
+            <span>Links.txt</span>
+        </div>
 
-	<sections class="desctop">
-		<a href="index.html">
-		<div class="icon">
-			<img src="pic/home.png" alt="">
-			<p>Home</p>
-		</div>
-		</a>
+        <!-- Links folder -->
+        <div class="window" id="links-folder">
+            <div class="window-header">
+                <span class="window-title">Links</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content" style="text-align: center;">
+                <a href="https://www.facebook.com/eriel.here" target="_blank">
+                -= Facebook =-
+                </a>
+                <br><br>
+                <a href="https://linkedin.com/in/nikita-jevdokishkin-7056561a8" target="_blank">
+                -= LinkedIn =-
+                </a>
+                <br><br>
+                <a href="https://t.me/erieln" target="_blank">
+                -= Telegram =-
+                </a>
+                <br><br>
+                <p>My Video content is in russian language(sorry).</p>
+                
+                <a href="https://www.youtube.com/@Erieln" target="_blank">
+                -= My travel YouTube channel =-
+                </a>
+                <br><br>
+                <a href="https://www.youtube.com/watch?v=gKiLa8o0YYo" target="_blank">
+                -= My stinky YouTube channel 2 =-
+                </a>
+                <br><br>
+                <a href="https://www.tiktok.com/@eriel.nikita" target="_blank">
+                -= TikTok =-
+                </a>
+            </div>
+        </div>
 
-		<a href="mailto:nikita.jevdokishkin@gmail.com">
-			<div class="icon">
-				<img src="pic/mail.png" alt="">
-				<p>Mail me</p>
-			</div>
-		</a>
+        <!-- Home folder -->
+        <div class="window" id="home-folder">
+            <div class="window-header">
+                <span class="window-title">Home</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content more-icons">
+                 <!-- Home/Hello ICON -->
+                <div class="icon" id="hello-icon">
+                    <div class="icon-image"><img src="pic/text.png" alt=""></div>
+                    <span>Hello.txt</span>
+                </div>
 
-		<a href="design.html">
-		<div class="icon">
-			<img src="pic/folder.png" alt="">
-			<p>Design</p>
-		</div>
-		</a>
+                <!-- Home/Aboutme ICON -->
+                <div class="icon" id="aboutme-icon">
+                    <div class="icon-image"><img src="pic/text.png" alt=""></div>
+                    <span>About Me.txt</span>
+                </div>
 
-		<a href="https://soundcloud.com/nikitaeriel">
-			<div class="icon">
-				<img src="pic/music.png" alt="">
-				<p>My music</p>
-			</div>
-		</a>
-		
-	</sections>
-	
-	<div class="window mood" style="width:40rem;">
-		<div class="windowtop">Mood
-			<div class="winbutton"><img src="pic/cross.png" alt="" width="16px" height="16px"></div>
-			<div class="winbutton"><img src="pic/size.png" alt="" width="16px" height="16px"></div>
-			<div class="winbutton"><img src="pic/down.png" alt="" width="16px" height="16px"></div>
-		</div>
-		<div class="windowin moodin">
-			
-		</div>
-		<div class="windowbottom">
-			Mood
-		</div>
-	</div>
+                 <!-- Home/Skills ICON -->
+                <div class="icon" id="skills-icon">
+                    <div class="icon-image"><img src="pic/pic.png" alt=""></div>
+                    <span>My Skills.png</span>
+                </div>
 
-	<div class="window aboutme" style="width:40rem;">
-		<div class="windowtop">About me
-			<div class="winbutton"><img src="pic/cross.png" alt="" width="16px" height="16px"></div>
-			<div class="winbutton"><img src="pic/size.png" alt="" width="16px" height="16px"></div>
-			<div class="winbutton"><img src="pic/down.png" alt="" width="16px" height="16px"></div>
-		</div>
-		<div class="windowin">
-			I'm a designer with a passion for creativity and aesthetics. My calling is to create visual arts that inspire, and leave a mark in minds. My work is my hobby, my vocation, and my way of self-expression. I love exploring new ideas, forms, and colors to craft unique and unforgettable pieces of... whatever.
-			<br><br>
-			My design has its own style - a blend of minimalism and contemporary trends with a focus on pain in the eyes. I believe that every detail matters and can enhance visual perception. My style is inspired by geometry, and another websites. I strive to make my projects both functional and beautiful, always seeking new ways to improve them.
-			<br><br>
-			Languages: <br>
-			English Em🤪ji Русский
-		</div>
-		<div class="windowbottom">
-			About me
-		</div>
-	</div>
+                <!-- Home/CV ICON -->
+                <a href="download/CVNJ.pdf" target="_blank">
+                <div class="icon">
+                    <div class="icon-image"><img src="pic/pdf.png" alt=""></div>
+                    <span>MY CV.pdf</span>
+                    
+                </div>
+                </a>
+                <!-- Home/COVER ICON -->
+                <a href="download/coverletterNJ.pdf" target="_blank">
+                <div class="icon">
+                    <div class="icon-image"><img src="pic/pdf.png" alt=""></div>
+                    <span>Cover Letter.pdf</span>
+                    
+                </div>
+                </a>
 
-	<div class="window skills" style="width:30rem;">
-		<div class="windowtop">Skills
-			<div class="winbutton"><img src="pic/cross.png" alt="" width="16px" height="16px"></div>
-			<div class="winbutton"><img src="pic/size.png" alt="" width="16px" height="16px"></div>
-			<div class="winbutton"><img src="pic/down.png" alt="" width="16px" height="16px"></div>
-		</div>
-		<div class="windowin skillsin">
-			<h1>My skills:</h1>
-			<h3>Web design. HTML. CSS. Figma. Photoshop</h3>
-			<br>
-			<h1>Extra</h1>
-			<h3>After effects. Premiere pro. AI. UI design.</h3>
-		</div>
-		<div class="windowbottom">Skills</div>
-	</div>
+                <!-- Home/Mood ICON -->
+                <div class="icon" id="mood-icon">
+                    <div class="icon-image"><img src="pic/pic.png" alt=""></div>
+                    <span>Mood.gif</span>
+                </div>
+                
+            </div>
+        </div>
 
-	<div class="window hello">
-		<div class="windowtop">Hello
-			<div class="winbutton"><img src="pic/cross.png" alt="" width="16px" height="16px"></div>
-			<div class="winbutton"><img src="pic/size.png" alt="" width="16px" height="16px"></div>
-			<div class="winbutton"><img src="pic/down.png" alt="" width="16px" height="16px"></div>
-		</div>
-		<div class="windowin" style="background-color: #f9e2ff;">
-			Welcome to my website! <br> My name is
-			<img src="pic/nikita.gif" alt="" width="450px" style="margin-top: -50px; margin-bottom: -50px;">
-			And I'm a designer and musician. 
-		</div>
-		<div class="windowbottom">Hello</div>
-	</div>
+        <!-- Home/Hello folder -->
+        <div class="window" id="hello-folder">
+            <div class="window-header">
+                <span class="window-title">Hello</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                Welcome to my website!
+                <br>My name is...
+                <img src="pic/nikita.gif" width="450px" style="margin-top: -50px;" alt="">
+                And I'm a designer and content maker.
+            </div>
+        </div>
 
-	<div class="window links" style="width:20rem;">
-		<div class="windowtop">Links
-			<div class="winbutton"><img src="pic/cross.png" alt="" width="16px" height="16px"></div>
-			<div class="winbutton"><img src="pic/size.png" alt="" width="16px" height="16px"></div>
-			<div class="winbutton"><img src="pic/down.png" alt="" width="16px" height="16px"></div>
-		</div>
-		<div class="windowin linksin">
-			<a href="https://linkedin.com/in/nikita-jevdokishkin-7056561a8">
-				-= LinkedIn =-
-			</a>
-			<br><br>
-			<a href="https://t.me/erieln">
-				-= Telegram =-
-			</a>
-			<br><br>
-			<a href="download/NikitaJevdokiskinCVDesigner.pdf">
-				-= Download my CV =-
-			</a>
-		</div>
-		<div class="windowbottom">links</div>
-	</div>
+        <!-- Home/Aboutme folder -->
+        <div class="window" id="aboutme-folder">
+            <div class="window-header">
+                <span class="window-title">About me</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <p>
+                I'm a designer with a passion for creativity and aesthetics. My calling is to create visual arts that inspire, and leave a mark in minds. My work is my hobby, my vocation, and my way of self-expression. I love exploring new ideas, forms, and colors to craft unique and unforgettable pieces of... whatever.
+                <br><br>
+                My design has its own style - a blend of minimalism and contemporary trends with a focus on pain in the eyes. I believe that every detail matters and can enhance visual perception. My style is inspired by geometry, and another websites. I strive to make my projects both functional and beautiful, always seeking new ways to improve them.
+                <br><br>
+                Languages:
+                English Em🤪ji Русский
+                </p>
+            </div>
+        </div>
 
+        <!-- Home/Skills folder -->
+        <div class="window" id="skills-folder">
+            <div class="window-header">
+                <span class="window-title">Skills</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content" style="min-width: 600px; min-height: 400px;">
+                <h1>My skills:</h1>
+                <p> Web design. UI Design. HTML. CSS. JS. Video Editing. Color Grading. Motion Design.</p>
 
-	<div class="footer">
-		<div class="left">
-			<div class="start">
-				<img src="pic/start.png" width="16px" height="16px" alt="">
-				<p>START</p>
-			</div>
+                <h1>My Instruments:</h1>
+                <p>Figma. Photoshop. Illustrator. Krita. Davinci Resolve. Premiere Pro. After Effects.</p>
+            </div>
+        </div>
 
-			<div class="menubutt">
-				<img src="pic/folder.png" width="16px" height="16px" alt="">
-				<p>Hello</p>
-			</div>
-
-			<div class="menubuttactive">
-				<img src="pic/folder.png" width="16px" height="16px" alt="">
-				<p>Links</p>
-			</div>
-
-			<div class="menubutt">
-				<img src="pic/folder.png" width="16px" height="16px" alt="">
-				<p>About me</p>
-			</div>
-			<div class="menubutt">
-				<img src="pic/folder.png" width="16px" height="16px" alt="">
-				<p>Skills</p>
-			</div>
-			<div class="menubutt">
-				<img src="pic/folder.png" width="16px" height="16px" alt="">
-				<p>Mood</p>
-			</div>
-		</div>
-	</div>
+        <!-- Home/Mood folder -->
+        <div class="window" id="mood-folder">
+            <div class="window-header">
+                <span class="window-title">Mood</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content pic-or-vid">
+                <img src="pic/mood.gif" alt="">
+            </div>
+        </div>
 
 
-	
-	</body>
+        <div class="window" id="design-folder">
+            <div class="window-header">
+                <span class="window-title">Design Projects</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content" >
+                <iframe id="portfolio-iframe" src="portfolio.html" width="100%" style="border: none; height: 75vh;"></iframe>
+                
+            </div>
+        </div>
+
+         <!-- Start/Video folder -->
+        <div class="window" id="video-folder">
+            <div class="window-header">
+                <span class="window-title">Videos</span>
+                <div class="window-controls">
+                    <button class="minimize">_</button>
+                    <button class="close">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <p>Videos soon...</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Стартовое меню -->
+    <div class="start-menu">
+        <div class="menu-divider"></div>
+        <div class="menu-item" data-submenu="games">
+            <img src="pic/games.png" 
+                 class="menu-icon" 
+                 alt="Games">
+            <span>Games</span>
+            <div class="submenu">
+                <div class="submenu-item">
+                    <img src="pic/menuicon1.png" class="submenu-icon" alt="Minesweeper">
+                    <span>Mine</span>
+                </div>
+                <div class="submenu-item">
+                    <img src="pic/menuicon1.png" class="submenu-icon" alt="Solitaire">
+                    <span>Soli</span>
+                </div>
+                <div class="submenu-item">
+                    <img src="pic/menuicon1.png" class="submenu-icon" alt="Tetris">
+                    <span>Tetriz</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-item" data-action="video">
+            <img src="pic/folder.png" 
+                 class="menu-icon" 
+                 alt="Video">
+            <span>Videos</span>
+        </div>
+        
+        <div class="menu-item" data-action="calculator">
+            <img src="pic/calc.png" 
+                 class="menu-icon" 
+                 alt="Calculator">
+            <span>Calculator</span>
+        </div>
+        
+        <div class="menu-item" data-action="shutdown">
+            <img src="pic/off.png" 
+                 class="menu-icon" 
+                 alt="Shutdown">
+            <span>Turn Off</span>
+        </div>
+    </div>
+
+    <!-- Панель задач -->
+    <div class="taskbar">
+        <div class="start-button">
+            <img src="pic/start.png" class="start-icon" alt="Start">
+            <span>MORE</span>
+        </div>
+        <div class="open-windows"></div>
+        <div class="clock">
+            <div class="user-info">
+                <img src="pic/lamp.png" 
+                     class="user-icon" 
+                     alt="User">
+                <span>| HELLO |</span>
+            </div>
+            <span id="time"></span>
+        </div>
+    </div>
+
+    <!-- Попап пользователя -->
+    <div class="user-popup">
+        <button class="popup-close">×</button>
+        <div class="popup-content">
+            <p>Email: nikita.jevdokishkin@gmail.com</p>
+            <p>Telegram: @erieln</p>
+            <p>Tel. +sorry but no.</p>
+            <p>This website was fully created by Nikita Jevdokiskin</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>

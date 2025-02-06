@@ -1,0 +1,442 @@
+/* Общие стили */
+@font-face {
+  font-family: apple;
+  src: url(Appletwo.ttf);
+
+}
+@font-face {
+  font-family: pixel;
+  src: url(pixelify.ttf);
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #008080;
+    color: #000;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(pic/wallpaper.jpeg);
+    position: fixed;
+    font-family: apple;
+    font-size: .75rem;
+    letter-spacing: -3px;
+}
+
+/* Рабочий стол */
+.desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: calc(100vh - 60px);
+    color: white;
+}
+
+/* Иконки */
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 80px;
+    text-align: center;
+    transition: all 0.1s ease;
+}
+
+.icon:hover {
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.icon-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+/* Окна */
+.window {
+    position: absolute;
+    background: #3ba3a6;
+    color: #000;
+    border: 4px solid;
+    border-color: #6DCBCE #117D82 #117D82 #6DCBCE;
+    display: none;
+    flex-direction: column;
+    max-width: 90vw;
+    max-height: 90vh;
+    min-width: 25vw;
+    box-shadow: 
+        1px 1px 0 #3ba3a6 inset,
+        -1px -1px 0 #3ba3a6 inset;
+    z-index: 1;
+}
+#design-folder{
+    min-width: 70vw;
+    min-height: 80vh;
+}
+.window-header {
+    background: #3ba3a6;
+    color: white;
+    padding: 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #117D82;
+    cursor: move;
+}
+#aboutme-folder{
+    width: 40vw;
+}
+.window-controls button {
+    background: #6DCBCE;
+    border: 2px solid;
+    border-color: #ffffff #117D82 #117D82 #ffffff;
+    margin-left: 2px;
+    cursor: pointer;
+    min-width: 20px;
+    font-family: "MS Sans Serif", Arial;
+    transition: all 0.1s ease;
+}
+
+.window-controls button:hover {
+    filter: brightness(0.9);
+}
+
+.window-content {
+    flex: 1;
+    padding: 8px;
+    background: #f0f0f0;
+    border: 1px solid #117D82;
+    margin: 3px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #117D82 #6DCBCE;
+    font-family: pixel;
+    letter-spacing: 0;
+    font-size: 1rem;
+}
+.pic-or-vid{
+    padding: 0;
+    margin: 0;
+}
+.more-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+.window-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.window-content::-webkit-scrollbar-track {
+    background: #6DCBCE;
+}
+
+.window-content::-webkit-scrollbar-thumb {
+    background-color: #117D82;
+    border: 3px solid #ffffff;
+}
+
+#skills-folder > .window-content{
+    background-image: url(pic/sunrise.jpeg);
+    color: #fff;
+}
+
+/* Панель задач */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #6DCBCE;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    gap: 2px;
+    border-top: 2px solid #ffffff;
+}
+
+.start-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #3ba3a6 0%, #6DCBCE 100%);
+    border: 2px solid;
+    border-color: #ffffff #117D82 #117D82 #ffffff;
+    cursor: pointer;
+    gap: 5px;
+    transition: all 0.1s ease;
+    color: #117D82;
+    font-size: 1.1rem;
+}
+
+.start-button:hover {
+    filter: brightness(1.1);
+}
+
+.start-icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.open-windows {
+    display: flex;
+    overflow-x: auto;
+    flex-shrink: 1;
+    min-width: 50px;
+}
+
+.task-item {
+    padding: 3px 6px;
+    margin-left: 5px;
+    background: #6DCBCE;
+    border: 2px solid;
+    border-color: #ffffff #117D82 #117D82 #ffffff;
+    font-size: 16px;
+    white-space: nowrap;
+    max-width: 150px;
+    min-width: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.task-item.active {
+    background: #3ba3a6;
+    color: white;
+    border-color: #ffffff #117D82 #117D82 #ffffff;
+}
+
+.clock {
+    padding: 5px 10px;
+    background: #3ba3a6;
+    border: 2px solid;
+    border-color: #117D82 #ffffff #ffffff #117D82;
+    margin-left: auto;
+    font-family: "MS Sans Serif", Arial;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.user-icon {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+}
+
+/* Стартовое меню */
+.start-menu {
+    position: fixed;
+    bottom: 170px;
+    left: 10px;
+    width: 200px;
+    background: #6DCBCE;
+    border: 2px solid;
+    border-color: #ffffff #117D82 #117D82 #ffffff;
+    box-shadow: 
+        2px 2px 0 rgba(0,0,0,0.1),
+        -1px -1px 0 rgba(255,255,0,0.5);
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.menu-divider {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #117D82;
+    border-left: 1px solid #3ba3a6;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    position: relative;
+    background: #6DCBCE;
+    border: 1px solid transparent;
+}
+
+.menu-item:hover {
+    background: #3ba3a6;
+    color: white;
+}
+
+.menu-item[data-submenu]:hover::after {
+    content: "▶";
+    position: absolute;
+    right: 5px;
+    color: white;
+}
+
+.submenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 200px;
+    background: #6DCBCE;
+    border: 2px solid;
+    border-color: #ffffff #117D82 #117D82 #ffffff;
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+.submenu-item:hover {
+    background: #3ba3a6;
+    color: #fff;
+}
+
+.menu-icon, .submenu-icon {
+    width: 16px;
+    height: 16px;
+}
+.clock{
+    letter-spacing: 0;
+    font-size: 1rem;
+}
+
+/* Попап пользователя */
+.user-popup {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 300px;
+    background: #ffff99;
+    border: 2px solid;
+    border-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    letter-spacing: 0;
+    font-size: 1rem;
+}
+
+.popup-close {
+    background: #ffff99;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    font-family: "MS Sans Serif", Arial;
+    position: absolute;
+    right: 0;
+    margin: 4px 4px 0 0;
+}
+
+.popup-content {
+    padding: 15px;
+    font-family: Arial;
+    color: rgba(0, 0, 0, .5);
+    line-height: 1.5;
+}
+
+.popup-close:hover {
+    filter: brightness(0.9);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .desktop {
+        padding: 10px;
+        height: calc(100vh - 50px);
+    }
+
+    .icon-image {
+        width: 60px;
+        height: 60px;
+    }
+    .window {
+        max-width: 95vw;
+        max-height: 85vh;
+        left: 5% !important;
+        top: 20px !important;
+    }
+    #aboutme-folder{
+        width: 95vw;
+    }
+    #links-folder{
+        width: 95vw;
+    }
+    #design-folder{
+        min-width: 96vw;
+        min-height: 80vh;
+    }
+    .taskbar {
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .start-button span {
+        display: none;
+    }
+
+    .start-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .clock {
+        padding: 3px 6px;
+    }
+
+    .start-menu {
+        width: 180px;
+        font-size: 14px;
+        padding-left: 35px;
+    }
+    
+    .submenu {
+        width: 180px;
+    }
+
+    .menu-divider {
+        left: 25px;
+    }
+
+    .menu-icon, .submenu-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .more-icons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
