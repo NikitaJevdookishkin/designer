@@ -14,7 +14,7 @@ updateTime();
 let windowStack = {
     posX: 150,
     posY: 30,
-    offset: 150
+    offset: 50
 };
 
 document.getElementById('home-icon').addEventListener('click', () => {
