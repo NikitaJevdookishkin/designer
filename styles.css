@@ -87,6 +87,10 @@ body {
 #aboutme-folder{
     width: 40vw;
 }
+ #skills-folder{
+        width: 30vw;
+        height: 40vh;
+    }
 .window-controls button {
     background: #6DCBCE;
     border: 2px solid;
@@ -389,6 +393,9 @@ body {
         width: 95vw;
     }
     #links-folder{
+        width: 95vw;
+    }
+    #skills-folder{
         width: 95vw;
     }
     #design-folder{
