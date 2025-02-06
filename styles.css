@@ -1,18 +1,14 @@
 /* Общие стили */
 @font-face {
   font-family: apple;
-  src: url(Appletwo.ttf);
-
+  src: url(font/Appletwo.ttf);
 }
 @font-face {
-  font-family: pixel;
-  src: url(pixelify.ttf);
-
+    font-family: none;
 }
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     background-color: #008080;
     color: #000;
     height: 100vh;
@@ -115,7 +111,7 @@ body {
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #117D82 #6DCBCE;
-    font-family: pixel;
+    font-family: none;
     letter-spacing: 0;
     font-size: 1rem;
 }
@@ -363,7 +359,7 @@ body {
 
 .popup-content {
     padding: 15px;
-    font-family: Arial;
+    font-family: none;
     color: rgba(0, 0, 0, .5);
     line-height: 1.5;
 }
